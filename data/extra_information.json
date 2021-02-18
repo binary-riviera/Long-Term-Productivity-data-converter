@@ -1,0 +1,60 @@
+{
+    "citation": {
+        "citation": {
+            "authors": "Bergeaud, A., Cette, G. and Lecat, R. (2016): ",
+            "paper": "Productivity Trends in Advanced Countries between 1890 and 2012,",
+            "journal": " Review of Income and Wealth. vol. 62(3), pages 420–444."
+        }
+    },
+    "country codes": {
+        "AUS": "Australia",
+        "AUT": "Austria",
+        "BEL": "Belgium",
+        "CAN": "Canada",
+        "CHE": "Switzerland",
+        "CHL": "Chile",
+        "DEU": "Germany",
+        "DNK": "Denmark",
+        "ESP": "Spain",
+        "FIN": "Finland",
+        "FRA": "France",
+        "GBR": "United Kingdom",
+        "GRC": "Greece",
+        "IRL": "Ireland",
+        "ITA": "Italy",
+        "JPN": "Japan",
+        "MEX": "Mexico",
+        "NLD": "Netherlands",
+        "NOR": "Norway",
+        "NZL": "New Zealand",
+        "PRT": "Portugal",
+        "SWE": "Sweden",
+        "USA": "United States"
+    },
+    "page key": {
+        "LP": {
+            "Series Name": "Labor productivity",
+            "Units": "$US 2010 ppp per hours"
+        },
+        "TFP": {
+            "Series Name": "Total Factor Productivity",
+            "Units": "$US 2010 ppp based"
+        },
+        "KI": {
+            "Series Name": "Capital Intensity",
+            "Units": "$US 2010 ppp per hours"
+        },
+        "GDP pc": {
+            "Series Name": "Gross Domestic Product per capita",
+            "Units": "$US 2010 ppp per persons"
+        },
+        "Age": {
+            "Series Name": "Average age of equipment capital stock",
+            "Units": "In year"
+        },
+        "Source": {
+            "Series Name": "Construction of the series",
+            "Units": "N.A"
+        }
+    }
+}

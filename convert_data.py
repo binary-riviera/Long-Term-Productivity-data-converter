@@ -9,16 +9,18 @@ def download_excel_database():
     r = requests.get(url, allow_redirects=False)
     open('BCLDatabase_online.xlsx', 'wb').write(r.content)
 
+
 def extract_csv_files(workbook):
     print('Extracting core data into csv files...')
     sheets_to_export = ['GDP per capita', 'Labor Productivity', 'TFP', 'KI', 'AgeK']
     for s in sheets_to_export:
         sheet = workbook[s]
         values = sheet.values
-        with  open('data/' + s + '.csv', 'w', newline='') as csv_file:
+        with open('data/' + s + '.csv', 'w', newline='') as csv_file:
             writer = csv.writer(csv_file, delimiter=',')
             for line in values:
                 writer.writerow(line)
+
 
 def extract_extra_information(workbook):
     print('Extracting extra information into json files...')
@@ -57,8 +59,9 @@ def extract_extra_information(workbook):
         'country codes' : country_codes,
         'page key' : page_keys
     }
+    with open('data/extra_information.json', 'w') as json_file:
+        json.dump(extra_information, json_file, ensure_ascii=False, indent=4)
 
-    print(json.dumps(extra_information, indent=4))
 
 def extract_data(filename, extract_extra_data=True):
     wb = load_workbook(filename = filename, data_only=True)
@@ -67,6 +70,7 @@ def extract_data(filename, extract_extra_data=True):
     if (extract_extra_data):
         extract_extra_information(wb)
     wb.close()
+
 
 def main():
     print("Long Term Productivity data converter")
